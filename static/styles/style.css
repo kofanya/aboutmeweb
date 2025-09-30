@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body{
+    margin: 0;
+    color: #454243;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+
+    background-color: #fce6f1;
+    scroll-behavior: smooth;
+}
+
+a{
+    color: #fce6f1;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+.logo{
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: - 15px;
+}
+
+.header{
+    padding: 5px 0;
+    background-color: #f752a2;
+    backdrop-filter: blur(10px);
+    
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header_nav{
+    display: flex;
+    gap: 60px;
+
+
+}
+
+.header_link{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.welcome{
+    height: 100vh;
+
+}
+
+.welcome .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.welcome_title{
+    width: 500px;
+    margin-bottom: 24px;
+
+    font-weight: 800;
+    font-size: 54;
+    line-height: 1.2;
+}
+.welcome_text{
+    width: 400px;
+}
+
+.welcome_img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+
+.about_me{
+    height: 100vh;
+}
+
+.private{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+.private .facts:nth-child(2n){
+    position:relative;
+    top: 140px;
+}
+
+.facts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.facts_right{
+    transform: translateY(60px);
+}
+
+
+.text1{
+    color:#f752a2;
+    font-weight: 700;
+}
+
+.text2{
+    color: #40bd44;
+    font-weight: 700;
+
+}
+
+.about_me_img{
+    height: 700px;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.work_img {
+    width: 600px;
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+.hobbies{
+    margin-top: 50px;
+}
+
+.hobby_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 200px;
+}
+.hobby_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+.hobby{
+    height: 800px;
+    position: relative;
+
+}
+
+.hobby:nth-child(2n){
+    position:relative;
+    top: 140px;
+}
+.hobby:hover {
+    opacity: 1;
+
+}
+.hobby_name{
+    opacity: 0;
+    color: #fce6f1;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.4s;
+}
+
+.hobby:hover .hobby_name{
+    opacity: 1;
+}
+
+.contact{
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    padding: 20px 0;
+    border-top: 1px solid #454243;
+    font-size: 16px;
+}
+
+.back-link{
+    color: #949494;
+}
