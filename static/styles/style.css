@@ -38,7 +38,6 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: - 15px;
-    border: 2px dashed green !important;
 }
 
 .header{
@@ -313,7 +312,7 @@ a:hover{
     .main{
         font-size: 14px;
     }
-    
+
     .facts {
         display: flex;
         flex-direction: column;
@@ -332,7 +331,8 @@ a:hover{
 
     .about_me{
     height: 70vh;
-}
+    }
+
 }
 @media(max-width: 700px){
     .hobby_wrapper{
@@ -351,19 +351,30 @@ a:hover{
 
 @media(max-width: 590px){
     .header_nav{
-        display: none;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
+    .header_link{
+    font-weight: 700;
+    font-size: 10px;
+    }
+    .header .container{
+    gap: 60px;
+    }
+
+    
     .welcome_img{
         width: 240px;
         height: 240px;
     }
     .welcome_title{
         font-size: 14px;
+        max-width: 280px;
     }
     .welcome_text{
         font-size: 10px;
-        padding-left: 40px;
+        max-width: 280px;
     }
     .welcome{
         height: auto;
@@ -391,7 +402,7 @@ a:hover{
 
     .hobby_name{
         font-size: 28px;
-        opacity: 1;
+        /* opacity: 1; */
     }
 
     .contact .container{
