@@ -38,11 +38,13 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     padding: - 15px;
+    border: 2px dashed green !important;
 }
 
 .header{
     padding: 5px 0;
     background-color: #f752a2;
+    
 }
 
 .header .container{
@@ -102,21 +104,11 @@ a:hover{
     grid-template-columns: 2fr 1fr;
     gap: 25px;
 }
-.private .facts:nth-child(2n){
-    position:relative;
-    top: 140px;
-}
-
 .facts{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 10px;
 }
-
-.facts_right{
-    transform: translateY(60px);
-}
-
 
 .text1{
     color:#f752a2;
@@ -130,28 +122,26 @@ a:hover{
 }
 
 .about_me_img{
-    height: 700px;
+    height: 600px;
 }
 
-.work {
+.work-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    text-align: center;
 }
+.work-span {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
 
-.work-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
+    .work_img {
+        width: 600px;
+        height: 600px;
+        margin-bottom: 10px;
+    }
 
-.work_img {
-    width: 600px;
-    height: 600px;
-    margin-bottom: 10px;
-}
 
 .hobbies{
     margin-top: 50px;
@@ -161,7 +151,7 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    margin-bottom: 200px;
+    margin-bottom: 200px; 
 }
 .hobby_img{
     width: 100%;
@@ -174,7 +164,6 @@ a:hover{
 .hobby{
     height: 800px;
     position: relative;
-
 }
 
 .hobby:nth-child(2n){
@@ -239,3 +228,181 @@ a:hover{
 .back-link{
     color: #949494;
 }
+
+@media (max-width: 1250px){
+    .container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .contact .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .work-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    }
+
+    .work-span {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .work_img {
+        width: 450px;
+        height: 450px;
+        margin-bottom: 10px; 
+    }
+}
+
+@media(max-width: 1020px){
+    .welcome_img{
+        width: 400px;
+        height: 400px;;
+    }
+}
+
+@media (max-width: 920px){
+    .welcome .container{
+        flex-direction: column-reverse;
+    }
+    .welcome_img {
+        margin-top: 30px;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .work-images {
+        display: contents;
+    }
+    
+    .work-span {
+        display: contents;
+    }
+    
+    .work_img:nth-child(1) { 
+        order: 1;
+    }
+    .work-span span:nth-child(1) { 
+        order: 2;
+    }
+    .work_img:nth-child(2) { 
+        order: 3;
+        margin-top: 30px;
+    }
+    .work-span span:nth-child(2) { 
+        order: 4;
+    }
+
+    .private{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main{
+        font-size: 14px;
+    }
+    
+    .facts {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 14px;
+    }
+    
+    .about_me_img{
+        width: 300px;
+        height: 400px;
+    }
+
+    .hobby{
+    height: 600px;
+    }
+
+    .about_me{
+    height: 70vh;
+}
+}
+@media(max-width: 700px){
+    .hobby_wrapper{
+        grid-template-columns: 1fr;
+        place-items: center;
+        margin-bottom: 10px; 
+    }
+    .hobby:nth-child(2n){
+    top: 0px;
+    }
+
+    .hobby{
+    width: 400px;
+    }
+}
+
+@media(max-width: 590px){
+    .header_nav{
+        display: none;
+    }
+
+    .welcome_img{
+        width: 240px;
+        height: 240px;
+    }
+    .welcome_title{
+        font-size: 14px;
+    }
+    .welcome_text{
+        font-size: 10px;
+        padding-left: 40px;
+    }
+    .welcome{
+        height: auto;
+    }
+
+    .facts{
+        font-size: 10px;
+    }
+
+    .about_me_img{
+        width: 200px;
+        height: 300px;
+    }
+
+    .work_img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px; 
+    }
+
+    .hobby{
+        height: 500px;
+        width: 300px;
+    }
+
+    .hobby_name{
+        font-size: 28px;
+        opacity: 1;
+    }
+
+    .contact .container{
+        max-width: 275px;
+    }
+    .contact-img{
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
