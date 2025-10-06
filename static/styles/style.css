@@ -377,7 +377,7 @@ a:hover{
         max-width: 280px;
     }
     .welcome{
-        height: auto;
+        height: 70vh;
     }
 
     .facts{
