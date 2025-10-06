@@ -330,7 +330,7 @@ a:hover{
     }
 
     .about_me{
-    height: 70vh;
+    height: 80vh;
     }
 
 }
@@ -377,7 +377,7 @@ a:hover{
         max-width: 280px;
     }
     .welcome{
-        height: 70vh;
+        height: 80vh;
     }
 
     .facts{
@@ -416,4 +416,17 @@ a:hover{
     }
 }
 
+@media(max-height: 550px){
+    .welcome_img{
+        height: 200px;
+        width: 200px;
+    }
+    .welcome{
+        margin-bottom: 100px;
+    }
 
+    .my_skills{
+        margin-top: 150px;
+    }
+
+}
